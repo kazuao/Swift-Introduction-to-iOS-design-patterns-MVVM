@@ -40,6 +40,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E5A539C2714001C00EA27F5 /* UserDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetail.storyboard; sourceTree = "<group>"; };
+		0E5A539D2714001C00EA27F5 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		0E5A539E2714001C00EA27F5 /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		0E5A539F2714001C00EA27F5 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		0E652373271039AB00238B81 /* SearchUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchUser.storyboard; sourceTree = "<group>"; };
 		0E65237827103B2000238B81 /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
 		0E65237A27103B2600238B81 /* SearchUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserModel.swift; sourceTree = "<group>"; };
@@ -74,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E5A539B2714001C00EA27F5 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A539C2714001C00EA27F5 /* UserDetail.storyboard */,
+				0E5A539D2714001C00EA27F5 /* UserDetailViewModel.swift */,
+				0E5A539E2714001C00EA27F5 /* UserDetailModel.swift */,
+				0E5A539F2714001C00EA27F5 /* UserDetailViewController.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		0EA3312A2710345E002608EE = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +160,7 @@
 			children = (
 				0EA3315C27103554002608EE /* UITableViewCells */,
 				0EA3319527103672002608EE /* SearchUser */,
+				0E5A539B2714001C00EA27F5 /* UserDetail */,
 			);
 			path = Views;
 			sourceTree = "<group>";
