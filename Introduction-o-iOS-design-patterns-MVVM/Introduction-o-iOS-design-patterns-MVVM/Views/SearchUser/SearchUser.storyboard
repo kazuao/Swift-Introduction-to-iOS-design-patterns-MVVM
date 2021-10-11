@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lmX-sR-f1F">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search GitHub User-->
+        <scene sceneID="dzS-dz-kQp">
+            <objects>
+                <viewController storyboardIdentifier="SearchUser" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lmX-sR-f1F" customClass="SearchUserViewController" customModule="Introduction_o_iOS_design_patterns_MVVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rZZ-BZ-rcB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="username" translatesAutoresizingMaskIntoConstraints="NO" id="C82-Qd-M4B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="lmX-sR-f1F" id="Chh-gK-fID"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gjZ-PY-VQH">
+                                <rect key="frame" x="0.0" y="51" width="375" height="616"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lmX-sR-f1F" id="Fb9-zJ-GLj"/>
+                                    <outlet property="delegate" destination="lmX-sR-f1F" id="Jf4-5b-jxh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JjW-Wh-7ea"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C82-Qd-M4B" firstAttribute="trailing" secondItem="JjW-Wh-7ea" secondAttribute="trailing" id="H92-pT-tU6"/>
+                            <constraint firstItem="JjW-Wh-7ea" firstAttribute="bottom" secondItem="gjZ-PY-VQH" secondAttribute="bottom" id="OLH-Yx-V9z"/>
+                            <constraint firstItem="JjW-Wh-7ea" firstAttribute="trailing" secondItem="gjZ-PY-VQH" secondAttribute="trailing" id="TkP-rP-3Pw"/>
+                            <constraint firstItem="gjZ-PY-VQH" firstAttribute="top" secondItem="C82-Qd-M4B" secondAttribute="bottom" id="V5P-s7-Tks"/>
+                            <constraint firstItem="gjZ-PY-VQH" firstAttribute="leading" secondItem="JjW-Wh-7ea" secondAttribute="leading" id="iWn-DF-uYw"/>
+                            <constraint firstItem="C82-Qd-M4B" firstAttribute="top" secondItem="JjW-Wh-7ea" secondAttribute="top" id="rMC-QK-yiW"/>
+                            <constraint firstItem="C82-Qd-M4B" firstAttribute="leading" secondItem="JjW-Wh-7ea" secondAttribute="leading" id="zeb-5K-WYE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search GitHub User" id="v6i-Oz-VIP"/>
+                    <connections>
+                        <outlet property="searchBar" destination="C82-Qd-M4B" id="V1x-5W-twg"/>
+                        <outlet property="tableView" destination="gjZ-PY-VQH" id="9AP-K8-nGy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezj-ut-adc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887.20000000000005" y="-18.440779610194905"/>
+        </scene>
+    </scenes>
+</document>
